@@ -10,5 +10,10 @@
 }
 
 #display {
-    font-size: 25px
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.counterButtonMinusInactive {
+    cursor: not-allowed;
 }

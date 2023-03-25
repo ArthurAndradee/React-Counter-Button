@@ -2,11 +2,11 @@ import {useState, useEffect} from 'react';
 import './Counter.css'
 
 export function Counter() {
-    const [value,setValue] = useState(1);
+    const [value,setValue] = useState(0);
     const [minusButtonClass,setMinusButtonClass] = useState('counterButtonMinusActive');
 
     useEffect(() => {
-        document.getElementById('display').innerHTML = `${5.00 * value}`;
+        document.getElementById('display').innerHTML = `vezes cinco: ${5.00 * value}`;
     }, [value]);
 
     function down() {
@@ -32,7 +32,7 @@ export function Counter() {
                 <p>{value}</p>
                 <button className='counterButtonPlusActive' onClick={up}>+</button>
             </div>
-            <div id='display'>12,00</div>
+            <div id='display'></div>
         </div>
         
 )};
